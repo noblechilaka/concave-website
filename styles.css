@@ -143,6 +143,7 @@ p {
 .btn-outline {
   border-color: currentColor;
   color: var(--text-light);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .btn-outline:hover {
@@ -163,6 +164,7 @@ p {
 .btn-primary {
   border-color: currentColor;
   color: var(--text-light);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .btn-primary:hover {
@@ -170,7 +172,10 @@ p {
   color: var(--text-dark);
 }
 
-
+.btn-outline:hover {
+  background: var(--text-light);
+  color: var(--text-dark);
+}
 
 /* Navigation Bar */
 .nav {
@@ -409,7 +414,6 @@ p {
   font-size: 0.5em;
   color: var(--gold-gradient-mid);
   opacity: 0.7;
-
 }
 
 .hero-subtitle {
@@ -1458,6 +1462,78 @@ p {
   margin-bottom: 0;
 }
 
+/* CTA Group for side-by-side buttons */
+.cta-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Footer CTA */
+.footer-cta {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-cta-btn {
+  border-color: var(--gold-gradient-mid);
+  color: var(--gold-gradient-mid);
+}
+
+.footer-cta-btn {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(200, 164, 93, 0.3) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  background-position: 200% center;
+}
+
+.footer-cta-btn:hover {
+  background: var(--gold-gradient-mid);
+  color: var(--dark-bg);
+  /* box-shadow: 0 0 12px 3px rgba(200, 164, 93, 0.6); */
+  transition: all 0.5s ease;
+}
+
+/* Gold shimmer effect for menu CTA */
+.gold-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-shimmer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(200, 164, 93, 0.6),
+    transparent
+  );
+  animation: shimmer 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 /* Animation Keyframes */
 /* @keyframes fadeInUp {
   from {
@@ -1607,6 +1683,9 @@ p {
   .intro-image-1 {
     width: 100%;
     height: 20rem;
+  }
+  .intro-image-2 {
+    display: none;
   }
 
   .gallery-grid {

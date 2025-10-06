@@ -1,9 +1,9 @@
-# TODO: Add Professional Comments to Codebase
+# TODO: Add Strategic CTAs to Genesis Skybar Website
 
-- [x] Add comments to script.js: Above each function, explain purpose and logic; inline for tricky lines
-- [x] Add comments to menuData.js: Top-level comment on structure
-- [x] Add comments to styles.css: Above major sections and complex rules
-- [ ] Add comments to src/App.tsx: Brief component comments
-- [ ] Add comments to src/main.tsx: Entry point comments
-- [ ] Add comments to src/index.css: Tailwind imports comment
-- [ ] Add comments to animations.js: Future animations note
+- [x] Update index.html: Add centered "EXPLORE MENU" CTA in hero section below subtitle
+- [ ] Update index.html: Add right-aligned "LEARN MORE" CTA in intro-section (Skybar Experience)
+- [ ] Update index.html: Change existing CTA in menu-highlight to "VIEW FULL MENU"
+- [ ] Update index.html: Add centered "BOOK AN EXPERIENCE" CTA in interior-section (Elegant Escape)
+- [ ] Update index.html: Add gold-accented "RESERVE NOW" CTA in footer
+- [ ] Update styles.css: Add CSS classes for CTA alignment (.cta-center, .cta-right) and footer gold accent
+- [ ] Update animations.js: Add GSAP ScrollTrigger animations for new CTAs (fade-in for intro, slide-up for interior, etc.)
