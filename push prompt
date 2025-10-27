@@ -1,3 +1,8 @@
 git add .
 git commit -m "Your short message describing the update"
 git push
+
+
+git remote add origin https://github.com/noblechilaka/concave-website.git
+git branch -M main
+git push -u origin main
