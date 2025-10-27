@@ -84,7 +84,7 @@ gsap.fromTo(
 
 // Our Menu CTA: fade-up with gold shimmer effect
 gsap.fromTo(
-  ".menu-highlight-text .btn",
+  ".menu-highlight-text  .btn",
   { opacity: 0, y: 20 },
   {
     opacity: 1,
@@ -98,7 +98,31 @@ gsap.fromTo(
       once: true,
     },
     onStart: () => {
-      const btn = document.querySelector(".menu-highlight-text .btn");
+      const btn = document.querySelector(".menu-highlight-text  .btn");
+      if (btn) {
+        btn.classList.add("gold-shimmer");
+        setTimeout(() => btn.classList.remove("gold-shimmer"), 1500);
+      }
+    },
+  }
+);
+// Our Menu CTA: fade-up with gold shimmer effect
+gsap.fromTo(
+  ".hero-title  .btn",
+  { opacity: 0, y: 20 },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    delay: 0.6,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".hero-title",
+      start: "top 80%",
+      once: true,
+    },
+    onStart: () => {
+      const btn = document.querySelector(".hero-title .btn");
       if (btn) {
         btn.classList.add("gold-shimmer");
         setTimeout(() => btn.classList.remove("gold-shimmer"), 1500);
@@ -298,23 +322,23 @@ gsap.fromTo(
   }
 );
 
-// Footer Animations
-gsap.fromTo(
-  ".footer",
-  { opacity: 0, y: 50, filter: "blur(5px)" },
-  {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0px)",
-    duration: 1,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".footer",
-      start: "top 90%",
-      once: true,
-    },
-  }
-);
+// // Footer Animations
+// gsap.fromTo(
+//   ".footer",
+//   { opacity: 0, y: 50, filter: "blur(5px)" },
+//   {
+//     opacity: 1,
+//     y: 0,
+//     filter: "blur(0px)",
+//     duration: 1,
+//     ease: "power2.out",
+//     scrollTrigger: {
+//       trigger: ".footer",
+//       start: "top 90%",
+//       once: true,
+//     },
+//   }
+// );
 
 // Other pages: Animate sections with fade and slide up
 gsap.utils.toArray("section").forEach((section) => {

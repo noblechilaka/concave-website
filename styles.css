@@ -18,7 +18,7 @@
 
   /* Spacing */
   --section-padding: 250px;
-  --section-padding-mobile: 60px;
+  --section-padding-mobile: 80px;
   --container-padding: 20px;
 
   /* Layout */
@@ -88,6 +88,10 @@ h1 {
 
 h2 {
   font-size: clamp(32px, 5vw, 64px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
   margin-bottom: 1rem;
   position: relative;
 }
@@ -118,9 +122,13 @@ h3 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.6;
+  /* font-size: 18px;
+  line-height: 1.6; */
   margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 /* Button Styles */
@@ -150,6 +158,8 @@ p {
   background: var(--text-light);
   color: var(--text-dark);
 }
+
+
 
 .btn-dark {
   border-color: var(--text-dark);
@@ -214,6 +224,12 @@ p {
   font-weight: 700;
   color: var(--gold-gradient-mid);
   letter-spacing: 0.1em;
+}
+
+.logo {
+  width: 6.5em;
+  transform: translateY(7px);
+  filter: brightness(1);
 }
 
 .nav-links {
@@ -406,6 +422,14 @@ p {
   letter-spacing: 0.1em;
   line-height: 0.9;
 }
+.intro-title {
+  font-family: "Great Vibes", cursive;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #c9a36a; /* gold tone */
+  letter-spacing: 4px;
+}
 
 .title-line {
   display: block;
@@ -415,14 +439,32 @@ p {
   color: var(--gold-gradient-mid);
   opacity: 0.7;
 }
-
-.hero-subtitle {
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.9);
-  font-style: italic;
-  margin-bottom: 0;
+.second-title {
+  /* font-size: 0.45em;
+  color: var(--text-light); */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #ffffff;
+  letter-spacing: 1px;
 }
 
+.subtitles {
+  font-size: 20px;
+  margin-top: 40px;
+  line-height: 0.5;
+  font-family: var(--font-sans);
+  font-weight: 100;
+  color: var(--text-light);
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  text-transform: lowercase;
+}
+
+
+.cta {
+}
 .scroll-indicator {
   position: absolute;
   bottom: 40px;
@@ -1672,6 +1714,18 @@ p {
   h2 {
     font-size: clamp(28px, 8vw, 48px);
   }
+  .intro-title {
+    font-size: 20px;
+  }
+  .second-title {
+    font-size: 30px;
+  }
+  .subtitles {
+    font-size: 5px;
+    padding: 10px;
+    opacity: 0.7;
+    transform: translateY(-20px);
+  }
   .nav-container {
     max-width: 400px;
   }
@@ -1679,12 +1733,19 @@ p {
     min-width: auto;
     width: 100%;
   }
+  .btn-hero{
+    min-width: auto;
+    width: 40%;
+  }
 
   .intro-image-1 {
     width: 100%;
     height: 20rem;
   }
   .intro-image-2 {
+    display: none;
+  }
+  .interior-image-overlay{
     display: none;
   }
 
