@@ -1,0 +1,2075 @@
+// Menu data structure containing categorized items for the restaurant/bar website
+// Organized by main categories (e.g., starters, mains) with subcategories and item details
+const menuData = {
+  //=====FOOD======//
+  starters: {
+    "salads-starters": [
+      {
+        name: "Seafood Lovers Platter - Good For 6 People",
+        price: "125000",
+        description:
+          "3 pc Peppered Prawns, 3 pc Chilli Prawns, 3 pc Butterfly Prawns, 3 pc Spicy Crabs, 8 pc Fish Fingers, 2 White Sol Fish Fillet, 4 pc Jumbo Peppered Snails, 1 Seafood Rice, 1 Asun Rice, 1 Coconut Rice",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Skybar Platter - Good For 4/6 People",
+        price: "60000",
+        description:
+          "8 Chicken wings, 8 Beef Sausages, 8 Spring rolls, 8 Roasted beef, 8 Fish Fingers",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Sports Combo Platter - Good For 2/3 People",
+        price: "28000",
+        description:
+          "4 Chicken wings, 4 Beef Sausages, 4 Spring rolls, 4 Roasted beef",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Seafood Salad",
+        price: "11500",
+        description:
+          "Grilled Assorted Seafood, Lemon Olive Oil Vinaigrette Dressing, Olives, Grapes, Onion, Tomato, Capsicum, Lettuce",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Caesar Salad Chicken",
+        price: "10500",
+        description:
+          "Caesar Dressing, Grilled Chicken, Apple, Assorted Lettuce, Bread Crumbs, Onion, Capsicum, Tomato, Cucumber, Olives",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Peppered Turkey",
+        price: "10500",
+        description: "Spicy Peppered Turkey",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Royal Chicken Kebab",
+        price: "10500",
+        description: "Turkish Chicken Kebab",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Peppered Shrimps",
+        price: "10000",
+        description: "Spicy peppered shrimps",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Skybar Shrimp Blast",
+        price: "10000",
+        description:
+          "Signature Starter, sweet spicy. Just like dynamite shrimps",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Kung Pao Prawns",
+        price: "10000",
+        description:
+          "Cantonese Stir Fry Prawns with Kung Pao Oriental Chili Sauce",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Goatmeat Pepper Soup",
+        price: "9500",
+        description: "Spicy Hot Pepper Soup With Goatmeat",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Crispy Wings",
+        price: "9500",
+        description: "Crispy Fried Chicken Wings",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Chicken Pepper Soup",
+        price: "9500",
+        description: "Spicy Hot Pepper Soup With Chicken",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Curried Chicken",
+        price: "9000",
+        description: "South Indian Stir Fry Spicy Flavourful Chicken",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Messy Wings",
+        price: "9000",
+        description: "Crispy Wings in Spicy sweet Buffalo Sauce",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Fish Finger",
+        price: "9000",
+        description: "Crunchy Crispy Breaded Fish Finger",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Korean BTS Chicken",
+        price: "9000",
+        description: "Korean Crispy Chicken Ball With Ranch & Wings Sauce",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Peppered Goatmeat",
+        price: "8500",
+        description: "Traditional Nigerian Spicy Goat Meat",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Crispy Mushrooms In Stir Fry Chinese Sauce",
+        price: "8500",
+        description: "Chinese Stir Fry Mushrooms",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Vegetarian Meatballs In Chinese Stir-Fry Sauce",
+        price: "8500",
+        description: "Vegetarian delicacy from Indo-Chinese cuisine",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Honey Chilli Chicken",
+        price: "8000",
+        description: "Chinese Stir Fry Sweet & Spicy Chicken",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Peppered Beef",
+        price: "8000",
+        description: "Traditional Nigerian Spicy Beef",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Peppered Snails",
+        price: "8000",
+        description: "Traditional Nigerian Spicy Jumbo Snails",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Peru Wings",
+        price: "8000",
+        description: "Our best seller chicken wings",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Peppered Gizzard",
+        price: "8000",
+        description: "Traditional Nigerian Spicy Gizzard",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Curried Beef",
+        price: "7500",
+        description: "South Indian Stir Fry Spicy Flavourful Beef",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Grilled Pan Sauteed Potato Wedges",
+        price: "7500",
+        description: "Grilled and Pan Sauteed Crispy Potato Wedges",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Mashed Potatoes",
+        price: "7500",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Spicy Chicken Sausages",
+        price: "7000",
+        description: "Soft & Spicy Chicken Sausages",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Stir Fried Veggies",
+        price: "7000",
+        description: "Seasonal Fresh Vegetable with Soy & Garlic Crumb",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Crispy Corn Stir-Fry",
+        price: "6500",
+        description: "Crispy, yummy appetizer",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Beef Spring Rolls",
+        price: "6500",
+        description: "Spring Roll with Beef",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Plantain Chops",
+        price: "4000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Yam Fries",
+        price: "4000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Sweet Potato Chops",
+        price: "4000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "French Fries",
+        price: "4000",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Ground Nut Chaat",
+        price: "3500",
+        description:
+          "Ground nut salad — sour, spicy with onion, tomatoes & lime",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+  //====MAINS====//
+  mains: {
+    all: [
+      {
+        name: "Beef Tenderloin",
+        price: "19500",
+        description:
+          "In Mushroom sauce or Black Pepper sauce or Chili Pepper Sauce",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "T Bone Steak",
+        price: "19500",
+        description:
+          "In Mushroom sauce or Black Pepper sauce or Chili Pepper Sauce",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Jumbo Prawns In Butter Garlic Sauce",
+        price: "19500",
+        description: "With Lemon Butter Garlic Sauce",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Butterfly Prawns",
+        price: "19500",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Spicy Sweet Beef Strips With Your Choice Of Side",
+        price: "19500",
+        description:
+          "Beef tenderloin cooked to perfection, sliced and tossed in spicy sweet sauce and served with your favourite side dish",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Grilled Jumbo Prawns",
+        price: "18500",
+        description: "In Spicy Chili Pepper Sauce",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Sweet & Sour Beef Tenderloin Strips In Pineapple Sauce",
+        price: "18500",
+        description:
+          "Chinese sweet & sour Beef strips main course with choice of any side dish",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Grilled Chicken Steak",
+        price: "16500",
+        description: "In creamy mushroom sauce or Black Pepper sauce",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Chargrilled Chicken",
+        price: "16500",
+        description: "In Spicy Vegetable Stew",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Sport Chili Fish",
+        price: "16000",
+        description: "In Mexican Salsa & Chili Pepper Sauce",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Grilled Chicken With Pesto Sauce",
+        price: "15500",
+        description: "With choice of Side Order",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Sweet & Sour Chicken In Pineapple Sauce",
+        price: "15000",
+        description:
+          "Saucy, tangy, sweet & sour chicken main course with choice of side dish",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Grilled Fish Steak In Asian Honey Soy Sauce",
+        price: "14000",
+        description:
+          "Salt Water Fish lightly grilled with Semi Sweet Oriental sauce, served alongside choice of Rice or Fries",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Chicken Curry",
+        price: "13500",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Beef Curry",
+        price: "13500",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Egg Sauce",
+        price: "10500",
+        description: "With Yam Or Plantain Chops",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+
+  //====PASTA====//
+  pasta: {
+    all: [
+      {
+        name: "Note",
+        price: "",
+        description: "Option of Spaghetti or Penne",
+        image: "",
+      },
+      {
+        name: "Creamy Pesto Spaghetti With Grilled Seafood",
+        price: "16500",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Spicy Seafood Marinara Pasta",
+        price: "15000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Creamy Chicken Spaghetti",
+        price: "14500",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Pesto Spaghetti",
+        price: "14500",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Creamy Pink Sauce Spaghetti Pasta With Chicken",
+        price: "14500",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Creamy Pink Sauce Spaghetti Pasta With Seafood",
+        price: "14500",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Rice Stick Noodle Singapore Style With Chicken",
+        price: "14500",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Spaghetti Bolognese",
+        price: "13000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Veg Alfredo Pasta",
+        price: "12000",
+        description: "Only Vegetarian Pasta without any protein added",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Veg Arabiata Pasta",
+        price: "11000",
+        description: "Vegetarian Pasta without any added proteins",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Chinese Hakka Noodles Vegetarian",
+        price: "11000",
+        description: "Vegetarian Chinese stir fry noodles",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+
+  //====SIDES====//
+  sides: {
+    all: [
+      {
+        name: "Seafood Rice",
+        price: 8000,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Asun Rice",
+        price: 5000,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Spicy Hot Lamb Rice",
+        price: null,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Special Meat Fried Rice",
+        price: 4000,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Coconut Rice",
+        price: 4000,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Plain Garlic & Vegetable Rice",
+        price: 4000,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Vegetable Fried Rice",
+        price: 4000,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Garlic Fried Rice",
+        price: 4000,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "White Rice",
+        price: 3500,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+
+  burgers: {
+    all: [
+      {
+        name: "Double Cheddar Whopper Chicken",
+        price: 16500,
+        description:
+          "Double patty, double cheese, double happiness for people who like everything extra big",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Double Cheddar Whopper Beef",
+        price: 16500,
+        description: "Cheese and chips",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Cheese Beef Burger from Tenderloin Steak",
+        price: 10500,
+        description:
+          "Beef patty, brown sautéed onion, sautéed tomato, lettuce, mayo, yellow cheese, freshly made burger bun",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "BBQ Chicken Burger",
+        price: 10500,
+        description:
+          "BBQ chicken patty, onion, tomato, lettuce, garlic mayo, cheese, freshly made burger bun",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Crispy Chicken Burger",
+        price: 10500,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+
+  //====DESERTS====//
+  desserts: {
+    cakes: [
+      {
+        name: "Chocolate Soufflé",
+        price: "18",
+        description: "Dark chocolate soufflé with Grand Marnier crème anglaise",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Tarte Tatin",
+        price: "16",
+        description: "Upside-down apple tart with Calvados ice cream",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Opera Cake",
+        price: "15",
+        description:
+          "Layered almond sponge with chocolate ganache and coffee buttercream",
+        image: "assets/dish.jpeg",
+      },
+    ],
+    "ice-cream": [
+      {
+        name: "Crème Brûlée",
+        price: "14",
+        description: "Classic vanilla bean crème brûlée with fresh berries",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+
+  //====DRINKS====//
+  drinks: {
+    cognac: [
+      {
+        name: "Hennessy XO",
+        price: "₦950,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Hennessy VSOP",
+        price: "₦200,000",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Martell Blue Swift",
+        price: "₦195,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Bisquit & Dubouché VSOP",
+        price: "₦195,000",
+        description: "VSOP luxury Cognac, France",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Rémy Martin VSOP",
+        price: "₦190,000",
+        description: "",
+        image: "assets/Elegant Craft Cocktail Preparation.png",
+      },
+      {
+        name: "Hennessy VS",
+        price: "₦135,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Martell VS",
+        price: "₦125,000",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "A. de Fussigny Cognac",
+        price: "₦110,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "KWV Barrel 12 Years Old Brandy",
+        price: "₦110,000",
+        description: "Pot-still distilled, 12 years",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "KWV Barrel 10 Year Pot Still Brandy",
+        price: "₦80,000",
+        description: "Pot-still distilled, 10 years",
+        image: "assets/remove bg dish.png",
+      },
+    ],
+
+    whiskey: [
+      {
+        name: "Glenfiddich 26 Years",
+        price: "₦2,000,000",
+        description: "Rare single malt, Speyside",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Glenfiddich 21 Years",
+        price: "₦700,000",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Teeling 21 Years Old",
+        price: "₦700,000",
+        description: "Premium Irish 21-year-old",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Johnnie Walker Blue Label",
+        price: "₦650,000",
+        description: "Rare blended scotch",
+        image: "assets/Elegant Craft Cocktail Preparation.png",
+      },
+      {
+        name: "Glenmorangie Signet",
+        price: "₦600,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Glenmorangie 18 Years Old",
+        price: "₦370,000",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "The Macallan 15 Years",
+        price: "₦355,000",
+        description: "Sherry, American & European cask",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Glenfiddich 18 Years",
+        price: "₦350,000",
+        description: "Oloroso & bourbon cask",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Gold Bar (American Whiskey)",
+        price: "₦250,000",
+        description: "Napa Valley cask finished",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Johnnie Walker 18 Years Old",
+        price: "₦235,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Johnnie Walker Green Label 15 Year",
+        price: "₦205,000",
+        description: "Blended malt",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Singleton 15 Years",
+        price: "₦200,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "The Macallan 12 Years",
+        price: "₦200,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Glen Levit 15 Year Old",
+        price: "₦195,000",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Balvenie 12 Years DoubleWood",
+        price: "₦185,000",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Johnnie Walker Gold Label",
+        price: "₦185,000",
+        description: "",
+        image: "assets/Elegant Craft Cocktail Preparation.png",
+      },
+      {
+        name: "Glenfiddich 15 Years",
+        price: "₦175,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Glenmorangie Quinta Ruban",
+        price: "₦150,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Glenmorangie Nectar D'or",
+        price: "₦150,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Singleton 12 Years",
+        price: "₦140,000",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Fercullen Falls Single Malt (Irish)",
+        price: "₦140,000",
+        description: "Irish single malt",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Glen Levit Founders Reserve",
+        price: "₦135,000",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Glenfiddich 12 Years",
+        price: "₦130,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Chivas 15 Year Old",
+        price: "₦125,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Teeling Single Malt",
+        price: "₦125,000",
+        description: "High-end Irish single malt",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Glenmorangie Original 10 Years",
+        price: "₦120,000",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Monkey Shoulder (Smokey Edition)",
+        price: "₦120,000",
+        description: "Special smoky edition",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Jack Daniel's Single Barrel",
+        price: "₦110,000",
+        description: "Tennessee whiskey, 47% ABV",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Observatory 20 Years",
+        price: "₦100,000",
+        description: "Single grain scotch",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Jameson Black Barrel",
+        price: "₦95,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Woodford Reserve (Bourbon)",
+        price: "₦90,000",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Monkey Shoulder",
+        price: "₦90,000",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Fercullen Falls Irish Small Batch",
+        price: "₦90,000",
+        description: "Small batch Irish whiskey",
+        image: "assets/Elegant Craft Cocktail Preparation.png",
+      },
+      {
+        name: "Johnnie Walker Black Label",
+        price: "₦90,000",
+        description: "Blended scotch",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Teeling Single Grain (Irish)",
+        price: "₦85,000",
+        description: "Irish single grain",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Jack Daniel's Gentleman Jack",
+        price: "₦85,000",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Chivas 12 Year Old",
+        price: "₦80,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Jameson Original",
+        price: "₦70,000",
+        description: "Classic Irish whiskey",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Jack Daniel's",
+        price: "₦70,000",
+        description: "Tennessee whiskey",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "American Honey",
+        price: "₦70,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Jack Daniel's Honey",
+        price: "₦70,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Teeling Small Batch",
+        price: "₦65,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+    ],
+
+    "other-spirits": [
+      {
+        name: "Avión Cristalino Tequila",
+        price: "₦550,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Casa Amigo Agave Azul Gold",
+        price: "₦375,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Aman Rosa Blanco Tequila",
+        price: "₦350,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Aman Silver Tequila",
+        price: "₦340,000",
+        description: "Luxury silver tequila",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Grey Goose",
+        price: "₦125,000",
+        description: "40% ABV, France",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Cîroc",
+        price: "₦110,000",
+        description: "40% ABV, France — ₦3,000/shot",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Inverroche Gin",
+        price: "₦90,000",
+        description: "Luxury gin",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Camino Tequila",
+        price: "₦70,000",
+        description: "₦3,000 per shot",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Buen Amigo Tequila",
+        price: "₦70,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Absolut",
+        price: "₦70,000",
+        description: "40% ABV, Sweden — ₦2,500/shot",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Bombay Sapphire London Dry",
+        price: "₦70,000",
+        description: "47% ABV, UK",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Whitley Neill",
+        price: "₦70,000",
+        description: "₦3,000 per shot",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Campari",
+        price: "₦65,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Jägermeister",
+        price: "₦65,000",
+        description: "Herbal liqueur",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Baileys Irish Cream",
+        price: "₦60,000",
+        description: "17% ABV — ₦4,000/shot",
+        image: "assets/dish.jpeg",
+      },
+    ],
+
+    "red-wine": [
+      {
+        name: "Escudo Rojo Magnum 1.5L (Luminous VIP)",
+        price: "₦155,000",
+        description: "Luxury 1.5L magnum",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Cooper & Thief Reserve Red Wine",
+        price: "₦120,000",
+        description: "Aged in bourbon casks, 16% ABV, 2021",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Cloudy Bay Pinot Noir",
+        price: "₦110,000",
+        description: "New World, 2018 vintage",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Châteauneuf-du-Pape",
+        price: "₦95,000",
+        description: "AOC, 14.5% ABV, France",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Masi Toar Valpolicella",
+        price: "₦95,000",
+        description: "Classic Italian wine",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Terrazas Malbec",
+        price: "₦55,000",
+        description: "14% ABV, Argentina",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Sandeman Ruby Port Reserve",
+        price: "₦55,000",
+        description: "Reserve port, Portugal",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Escudo Rojo (Spain)",
+        price: "₦55,000",
+        description: "Sour red deluxe",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Rubis Chocolate Wine",
+        price: "₦50,000",
+        description: "Sweet chocolate red, 15% ABV",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Nederburg Merlot",
+        price: "₦50,000",
+        description: "14% ABV, South Africa",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Thomas Barton, Bordeaux",
+        price: "₦50,000",
+        description: "13.5% ABV, France",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Mouton Cadet",
+        price: "₦45,000",
+        description: "Bordeaux, 13.5% ABV",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Sandeman Ruby Port (Regular)",
+        price: "₦45,000",
+        description: "Entry-level ruby port",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Silk & Spice Medium Sweet Red",
+        price: "₦45,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Gerard Bertrand White & Red",
+        price: "₦40,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Hobnob Shiraz",
+        price: "₦40,000",
+        description: "French vintage spicy Shiraz 2020",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "La Fiole Cote Du Rhone",
+        price: "₦38,000",
+        description: "AOC, 14% France",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Refosco DOC La Delizia",
+        price: "₦35,000",
+        description: "Friuli DOC red",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Montepulciano D'Abruzzo",
+        price: "₦35,000",
+        description: "DOC, 13% ABV, Italy",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Ognigiorno Lambrusco (Semi Sweet)",
+        price: "₦32,000",
+        description: "Italian semi-sweet red",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Beringer Merlot",
+        price: "₦30,000",
+        description: "Prestigious Californian 2016 Merlot",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Lindemans Bin 46 Sweet Red",
+        price: "₦30,000",
+        description: "Famous Australian sweet red",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Chateau La Rose Bouquey",
+        price: "₦28,000",
+        description: "St. Emilion Merlot",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "AGOR Wine",
+        price: "₦28,000",
+        description: "Moldovan red",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Friend & Family Red Wine",
+        price: "₦28,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Sweet Kiss",
+        price: "₦28,000",
+        description: "Sweet, 8.5% ABV, South Africa",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Robertson (Sweet)",
+        price: "₦28,000",
+        description: "7.5% ABV, South Africa",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Chianti (Vintage)",
+        price: "₦28,000",
+        description: "Sangiovese, 13% ABV, Italy",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Lamothe Parrot Red",
+        price: "₦27,000",
+        description: "Natural sweet red",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Carlo Rossi (Sweet)",
+        price: "₦27,000",
+        description: "9% ABV, USA",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Four Cousins (Sweet)",
+        price: "₦27,000",
+        description: "8.5% ABV, South Africa",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "B&G Cuvee (Sour & Sweet)",
+        price: "₦27,000",
+        description: "12% ABV, France",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Hardy's Red",
+        price: "₦26,000",
+        description: "Australia",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Domino Del Rey (Sweet Red)",
+        price: "₦25,000",
+        description: "10.5% ABV, Spain",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Maison J Grandet (Sweet Red)",
+        price: "₦24,000",
+        description: "Natural sweet red from France, 13% ABV",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "4th Street Sweet",
+        price: "₦22,000",
+        description: "8% ABV, Nigeria",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+    ],
+
+    "rose-wines": [
+      {
+        name: "Grünberger Rosenlese (Sweet)",
+        price: "₦35,000",
+        description: "7.5% ABV, South Africa",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Sweet Lips Rosé (Sweet)",
+        price: "₦28,000",
+        description: "8.5% ABV, South Africa",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Mateus",
+        price: "₦28,000",
+        description: "11% ABV, Portugal",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Four Cousins (Sweet)",
+        price: "₦27,000",
+        description: "8% ABV, South Africa",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "4th Street (Sweet)",
+        price: "₦22,000",
+        description: "8% ABV, Nigeria",
+        image: "assets/dish.jpeg",
+      },
+    ],
+
+    "white-wine": [
+      {
+        name: "Cloudy Bay Sauvignon Blanc",
+        price: "₦115,000",
+        description: "Award-winning, 13.5% ABV",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Clos Henry Sauvignon Blanc 2021",
+        price: "₦65,000",
+        description: "Vintage French semi-dry",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Santa Christina Vermentino (White)",
+        price: "₦50,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Terrazas Chardonnay",
+        price: "₦48,000",
+        description: "14% ABV, Argentina",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Nederburg Chardonnay",
+        price: "₦45,000",
+        description: "14% ABV, South Africa",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Barton & Guestier Sancerre",
+        price: "₦45,000",
+        description: "Top white from France, dry",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Art De Vivre",
+        price: "₦45,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Georges Dubeuf Sauvignon Blanc 2021",
+        price: "₦40,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Vignetti Pinot Grigio",
+        price: "₦35,000",
+        description: "Classic Italian Pinot Grigio",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Sasster Ribolla Gialla",
+        price: "₦35,000",
+        description: "Italian white",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "La Delizia DOC Traminar",
+        price: "₦35,000",
+        description: "Traminer grape, DOC Italy",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Sasster Sauvignon Blanc IGT",
+        price: "₦35,000",
+        description: "IGT Italian white",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Sweet Kiss (White)",
+        price: "₦28,000",
+        description: "8.5% ABV, South Africa",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Four Cousins White",
+        price: "₦27,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Eagle Hawk Sauvignon Blanc",
+        price: "₦25,000",
+        description: "12% ABV, Australia",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "4th Street (White)",
+        price: "₦22,000",
+        description: "8% ABV, Nigeria",
+        image: "assets/Skybar shrimp blast.png",
+      },
+    ],
+
+    "sparkling-champagne": [
+      {
+        name: "Dom Pérignon Brut",
+        price: "₦900,000",
+        description: "Vintage champagne, 12.5% ABV, France",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Moët & Chandon Ice",
+        price: "₦365,000",
+        description: "Imperial demi-sec, 12% ABV",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Veuve Clicquot Rich",
+        price: "₦365,000",
+        description: "For luxury lovers",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Veuve Clicquot Brut",
+        price: "₦300,000",
+        description: "Champagne, brut",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Moët & Chandon Nectar",
+        price: "₦300,000",
+        description: "Imperial demi-sec",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Moët & Chandon Imperial",
+        price: "₦250,000",
+        description: "Champagne, brut",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "G.H. Mumm",
+        price: "₦190,000",
+        description: "Champagne, brut",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Bollinger Special Cuvée",
+        price: "₦190,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Charles VII (Canard-Duchêne)",
+        price: "₦145,000",
+        description: "Award-winning champagne",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Belaire Lux White",
+        price: "₦135,000",
+        description: "Sparkling, demi-sec",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Veuve De Verney Ice White",
+        price: "₦35,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Luciano Blue Moscato",
+        price: "₦30,000",
+        description: "Blue moscato, 7% ABV — dessert pairing",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Martinelli's Gold (Non-alc)",
+        price: "₦25,000",
+        description: "Non-alcoholic sparkling cider, USA",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Baron De Val Ice White",
+        price: "₦25,000",
+        description: "Ice white cava",
+        image: "assets/remove bg dish.png",
+      },
+    ],
+
+    cocktails: [
+      {
+        name: "NYC Iced Tea",
+        price: "₦9,500",
+        description:
+          "Gin, Vodka, Tequila, Rum, Triple Sec, Sweet & Sour, Cranberry — strong & intense",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Tokyo Iced Tea",
+        price: "₦9,500",
+        description:
+          "Gin, Vodka, Tequila, Sprite, Rum, Green Melon, Sweet & Sour",
+        image: "assets/Elegant Craft Cocktail Preparation.png",
+      },
+      {
+        name: "Long Island Iced Tea",
+        price: "₦9,500",
+        description:
+          "Vodka, Rum, Gin, Tequila, Triple Sec, Sweet & Sour, Coke — strong",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "African Zombie",
+        price: "₦9,000",
+        description:
+          "Rum, Smokey whisky, Coconut rum, Sweet & Sour, Almond & Orange",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Be My Bestie",
+        price: "₦9,000",
+        description:
+          "5 spirits, Peach, Coconut rum, Sweet & Sour, topped with energy drink",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "White Russian",
+        price: "₦8,500",
+        description: "Vodka, Coffee liqueur, Cream",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Milk And Honey",
+        price: "₦8,000",
+        description: "Irish Cream, Scotch Whisky, Honey",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Pain Killer",
+        price: "₦8,000",
+        description: "Dark Rum, Pineapple, Orange, Ginger, Honey",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Sky Is Blue",
+        price: "₦8,000",
+        description:
+          "Tequila, Rum, Lychee, Blue Curacao, Coconut Crème, Passion fruit, Pineapple",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Pink Mojito",
+        price: "₦8,000",
+        description: "Tequila, Mint, Cranberry, Lemon — mild & sour",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Cucumber & Mint Martini",
+        price: "₦7,500",
+        description: "Gin or Vodka, Mint, Cucumber, Sweet & Sour",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Latina Lady",
+        price: "₦7,500",
+        description: "Gin, Passionfruit, Orange",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Cube Libre",
+        price: "₦7,500",
+        description: "Rum & Coca-Cola",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Jäger Bomb",
+        price: "₦7,500",
+        description: "Jägermeister & Energy Drink",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Lady In Red",
+        price: "₦7,500",
+        description: "Vodka, Triple Sec, Hibiscus tea, Orange, Passion fruit",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "The Legend",
+        price: "₦7,500",
+        description: "Gin, Campari, Sweet Vermouth",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Violet Martini",
+        price: "₦7,000",
+        description: "Vodka/Gin, Violet extract, Peach",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Lychee On The Rocks",
+        price: "₦7,000",
+        description: "Vodka, Lychee liqueur, Sweet & Sour",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Cilantro Mule",
+        price: "₦7,000",
+        description: "Vodka, Cilantro, Ginger, Beer",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Manhattan (Dry/Sweet)",
+        price: "₦7,000",
+        description: "Bourbon, Vermouth, Angostura",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Old Fashioned",
+        price: "₦7,000",
+        description: "Bourbon, Sugar, Angostura",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Sangria (White)",
+        price: "₦7,000",
+        description: "White wine, Gin, Fruits",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Pear Collins",
+        price: "₦7,000",
+        description: "Vodka, Pear puree, Sweet & Sour, Sparkling",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Gold Rush",
+        price: "₦7,000",
+        description: "Vodka, Ginger, Apple, Energy drink",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Mr Odogwu",
+        price: "₦7,000",
+        description: "Odogwu Bitters, Gin, Martini Rosso",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Sky Margarita (Shaken Only)",
+        price: "₦7,000",
+        description: "Tequila, Triple Sec, Sweet & Sour",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Doodoo Martini (Spicy)",
+        price: "₦7,000",
+        description: "Vodka, Spicy syrup, Olives",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Pina Colada",
+        price: "₦7,000",
+        description: "Rum, Coconut crème, Ice cream, Pineapple",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Whisky Sour",
+        price: "₦7,000",
+        description: "Whisky, Sweet & Sour, Orange (egg white optional)",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Espresso Martini",
+        price: "₦7,000",
+        description: "Vodka, Coffee liqueur, Espresso",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Margaritas",
+        price: "₦7,000",
+        description: "Tequila, Triple Sec, Sweet & Sour (various flavours)",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Bitter Truth",
+        price: "₦7,000",
+        description: "Gin, Campari, Sweet Vermouth, Lime & Cranberry",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Mojitos (various)",
+        price: "₦7,000",
+        description:
+          "Rum, Mint, Sweet & Sour, Lemon, Sprite (different flavours available)",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Bond Martini",
+        price: "₦7,000",
+        description: "Vodka/Gin, Dry Vermouth, Olives",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Mai Tai",
+        price: "₦7,000",
+        description: "Rum, Triple Sec, Pineapple, Almond",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Campari Spritz",
+        price: "₦7,000",
+        description: "Campari, White wine, Orange, Sprite",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Daiquiri",
+        price: "₦7,000",
+        description: "Rum, Triple Sec, Sweet & Sour (flavours available)",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Bay Breeze",
+        price: "₦7,000",
+        description: "Vodka, Blue Curacao, Cranberry, Pineapple",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Jameson Ginger Ale",
+        price: "₦7,000",
+        description: "Jameson, Ginger, Honey, Orange",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Jack & Peach",
+        price: "₦7,000",
+        description: "Jack Daniels, Peach, Orange",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Sangria (Red)",
+        price: "₦7,000",
+        description: "Red wine, Gin, Fruits",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Sangria (Rosé)",
+        price: "₦7,000",
+        description: "Rosé wine, Gin, Fruits",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Mr & Mrs Smith",
+        price: "₦7,000",
+        description: "Vodka, Orange, Cherry, Beer, Peach & Apricot",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "The Bullfighter",
+        price: "₦7,000",
+        description: "Tequila, Kahlua, Red Bull, Beer",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Dark & Stormy",
+        price: "₦7,000",
+        description: "Rum, Ginger, Lime",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Cosmopolitan",
+        price: "₦7,000",
+        description: "Vodka, Triple Sec, Lime, Cranberry",
+        image: "assets/remove bg dish.png",
+      },
+    ],
+
+    "beers-shots": [
+      {
+        name: "Hennessy VS (Shot)",
+        price: "₦6,500",
+        description: "30ml",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Glenmorangie 10 (Shot)",
+        price: "₦5,000",
+        description: "30ml",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "JW Black Label (Shot)",
+        price: "₦5,000",
+        description: "30ml",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Jack Daniels (Shot)",
+        price: "₦5,000",
+        description: "30ml",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Jameson Green (Shot)",
+        price: "₦5,000",
+        description: "30ml",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Heineken Draught",
+        price: "₦4,500",
+        description: "",
+        image: "assets/grilled pan sauteed potato wedges.png",
+      },
+      {
+        name: "Guinness Stout Can",
+        price: "₦4,500",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Smirnoff Ice Can",
+        price: "₦4,500",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Desperado Can",
+        price: "₦4,500",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Campari (Shot)",
+        price: "₦4,500",
+        description: "30ml",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Odogwu Bitters",
+        price: "₦4,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Absolut Vodka (Shot)",
+        price: "₦4,000",
+        description: "30ml",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Gordon's Gin (Shot)",
+        price: "₦4,000",
+        description: "30ml",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Baileys (Shot)",
+        price: "₦4,000",
+        description: "30ml",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Jägermeister (Shot)",
+        price: "₦4,000",
+        description: "30ml",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Lord's Lemongrass Ginger Can",
+        price: "₦4,000",
+        description: "Flavored gin drink, 5% ABV",
+        image: "assets/dish.jpeg",
+      },
+    ],
+
+    buzzfree: [
+      {
+        name: "Baileys Milkshake",
+        price: "₦9,000",
+        description: "Milkshake",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Caramel Milkshake",
+        price: "₦8,000",
+        description: "Full cream caramel",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Oreos Milkshake",
+        price: "₦8,000",
+        description: "Full cream",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Strawberry Milkshake",
+        price: "₦8,000",
+        description: "Milkshake",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Apple Milkshake",
+        price: "₦8,000",
+        description: "Milkshake",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Banana Milkshake",
+        price: "₦8,000",
+        description: "Milkshake",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Vanilla Milkshake",
+        price: "₦8,000",
+        description: "Milkshake",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Chocolate Milkshake",
+        price: "₦8,000",
+        description: "Milkshake",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Banana Papaya Smoothie",
+        price: "₦7,000",
+        description: "Smoothie",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Virgin Mojito",
+        price: "₦7,000",
+        description: "Non-alcoholic mojito",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Cendrillon",
+        price: "₦7,000",
+        description: "Buzz free",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Caribbean Delight",
+        price: "₦7,000",
+        description: "Buzz free",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Tropical Smoothie",
+        price: "₦7,000",
+        description: "Smoothie",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Refresher",
+        price: "₦7,000",
+        description: "Buzz free",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Red Sombrero",
+        price: "₦5,000",
+        description: "Buzz free",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Energy Drink",
+        price: "₦5,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Espresso / Black Coffee",
+        price: "₦3,000",
+        description: "Ethiopian blends",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Herbal Tea (Fresh Ginger & Mint)",
+        price: "₦2,500",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Schweppes Virgin Mojito",
+        price: "₦2,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Water",
+        price: "₦1,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+    ],
+
+    "extras-hukkah": [
+      {
+        name: "Cognac (extra)",
+        price: "₦2,500",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Gin (extra)",
+        price: "₦1,000",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Vodka (extra)",
+        price: "₦1,000",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Coal",
+        price: "₦1,000",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Ice Bowl",
+        price: "₦500",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+    ],
+
+    flavours: [
+      {
+        name: "Strawberry",
+        price: "",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Grape",
+        price: "",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Blueberry",
+        price: "",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      { name: "Lemon", price: "", description: "", image: "assets/dish.jpeg" },
+      {
+        name: "Mint",
+        price: "",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Double Apple",
+        price: "",
+        description: "",
+        image: "assets/Spectrum of Refreshing Cocktails.png",
+      },
+      {
+        name: "Cream With Mint",
+        price: "",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Cappuccino",
+        price: "",
+        description: "",
+        image: "assets/remove bg dish.png",
+      },
+      {
+        name: "Mix Berries",
+        price: "",
+        description: "",
+        image: "assets/Skybar shrimp blast.png",
+      },
+      {
+        name: "Make Your Own Flavour",
+        price: "",
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+
+  //====SMOKE====//
+  smoke: {
+    all: [
+      {
+        name: "Double Shisha",
+        price: 10000,
+        description: "",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Vip Led Sky Rocket Sheesha",
+        price: 8000,
+        description:
+          "Exclusive with double pipe Puff puff pass. Any choice of Ice/Vodka/Gin",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Regular Sheesha",
+        price: 7000,
+        description: "Any choice of Ice/Vodka/Gin",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Rothmans Switch",
+        price: 4000,
+        description: "Per pack",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Esse Exchange Black",
+        price: 4000,
+        description: "Per pack",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+
+  //====HAPPY HOURS====//
+  "happy-hours": {
+    all: [
+      {
+        name: "Buy 1 Get 1 Free Cocktails",
+        price: null,
+        description: "Available during Happy Hours only",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Discounted Beers",
+        price: null,
+        description: "Special offers on selected beers",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Half-Price Shots",
+        price: null,
+        description: "Selected shots at 50% off",
+        image: "assets/dish.jpeg",
+      },
+      {
+        name: "Wine Specials",
+        price: null,
+        description: "Exclusive wine deals during Happy Hours",
+        image: "assets/dish.jpeg",
+      },
+    ],
+  },
+};
+
+export default menuData;
