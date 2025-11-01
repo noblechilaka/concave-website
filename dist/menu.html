@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Genesis Skybar</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/skybar logo.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav nav-solid">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html"
+            ><img class="logo" src="assets/concave logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="menu.html" class="active">MENU</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="nav-social">
+          <a href="https://www.instagram.com/skybarphc/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://web.facebook.com/profile.php?id=100083162058939&_rdc=1&_rdr#"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img
+          src="https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
+          alt="Menu"
+        />
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="page-hero-content">
+        <h1>OUR MENU</h1>
+        <p>A curated selection of contemporary French cuisine</p>
+      </div>
+    </section>
+
+    <!-- Menu Filters -->
+    <section class="menu-filters">
+      <div class="container">
+        <!-- Mobile Filter Toggle -->
+        <button class="filter-toggle-btn" id="filter-toggle">
+          <i class="fas fa-filter"></i>
+          <span>Filters</span>
+        </button>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+
+          <!-- Icon for starters: utensils represent food items -->
+          <button class="filter-btn" data-filter="starters">
+            <i data-lucide="utensils" aria-label="Food icon"></i>STARTERS
+          </button>
+
+          <!-- Icon for mains: utensils represent main courses -->
+          <button class="filter-btn" data-filter="mains">
+            <i data-lucide="utensils" aria-label="Food icon"></i>MAINS
+          </button>
+          <!-- <div class="sub-filter-container" data-parent="mains">
+                    <button class="sub-filter-btn" data-sub="beef">Beef</button>
+                    <button class="sub-filter-btn" data-sub="chicken">Chicken</button>
+                    <button class="sub-filter-btn" data-sub="seafood">Seafood</button>
+                    <button class="sub-filter-btn" data-sub="fish">Fish</button>
+                    <button class="sub-filter-btn" data-sub="curry">Curry</button>
+                </div> -->
+
+          <!-- Icon for pasta: utensils represent pasta dishes -->
+          <button class="filter-btn" data-filter="pasta">
+            <i data-lucide="utensils" aria-label="Food icon"></i>PASTA
+          </button>
+
+          <!-- Icon for burgers: burger icon represents burger items -->
+          <button class="filter-btn" data-filter="burgers">
+            <i data-lucide="burger" aria-label="Burger icon"></i>BURGERS
+          </button>
+
+          <!-- Icon for sides: bowl represents side dishes -->
+          <button class="filter-btn" data-filter="sides">
+            <i data-lucide="bowl" aria-label="Sides icon"></i>SIDES
+          </button>
+
+          <!-- Icon for desserts: ice cream represents sweet desserts -->
+          <button class="filter-btn" data-filter="desserts">
+            <i data-lucide="ice-cream" aria-label="Dessert icon"></i>DESSERTS
+          </button>
+          <div class="sub-filter-container" data-parent="desserts">
+            <button class="sub-filter-btn" data-sub="cakes">Cakes</button>
+            <button class="sub-filter-btn" data-sub="ice-cream">
+              Ice Cream
+            </button>
+          </div>
+
+          <!-- Icon for drinks: wine represents beverages and cocktails -->
+          <button class="filter-btn" data-filter="drinks">
+            <i data-lucide="wine" aria-label="Drinks icon"></i>DRINKS
+          </button>
+          <div
+            class="sub-filter-container drinks-sub-filters"
+            data-parent="drinks"
+          >
+            <div class="visible-filters">
+              <button class="sub-filter-btn" data-sub="cocktails">
+                Cocktails
+              </button>
+              <button class="sub-filter-btn" data-sub="whiskey">Whiskey</button>
+              <button class="sub-filter-btn" data-sub="cognac">Cognac</button>
+              <button class="sub-filter-btn" data-sub="red-wine">
+                Red Wine
+              </button>
+              <button class="sub-filter-btn" data-sub="sparkling-champagne">
+                Champagne
+              </button>
+              <button class="more-toggle-btn" id="drinks-more-toggle">
+                More
+              </button>
+            </div>
+            <div class="hidden-filters">
+              <button class="sub-filter-btn" data-sub="other-spirits">
+                Other Spirits
+              </button>
+              <button class="sub-filter-btn" data-sub="white-wine">
+                White Wine
+              </button>
+              <button class="sub-filter-btn" data-sub="rose-wines">
+                Rosé Wine
+              </button>
+              <button class="sub-filter-btn" data-sub="beers-shots">
+                Beer & Shots
+              </button>
+              <button class="sub-filter-btn" data-sub="buzzfree">
+                Buzzfree
+              </button>
+              <button class="sub-filter-btn" data-sub="extras-hukkah">
+                Extras
+              </button>
+              <button class="sub-filter-btn" data-sub="flavours">
+                Flavours
+              </button>
+            </div>
+          </div>
+
+          <!-- Icon for smoke: cigarette represents shisha and smoking items -->
+          <button class="filter-btn" data-filter="smoke">
+            <i data-lucide="cigarette" aria-label="Smoke icon"></i>SMOKE
+          </button>
+
+          <!-- Icon for happy hours: clock represents time-based specials -->
+          <button class="filter-btn" data-filter="happy-hours">
+            <i data-lucide="clock" aria-label="Happy Hours icon"></i>HAPPY HOURS
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section section-light menu-section">
+      <div class="container">
+        <!-- Starters -->
+        <div class="menu-category" data-category="starters">
+          <h2 class="menu-category-title">STARTERS</h2>
+          <div class="menu-grid"></div>
+        </div>
+
+        <!-- Mains -->
+        <div class="menu-category" data-category="mains">
+          <h2 class="menu-category-title">MAINS</h2>
+          <div class="menu-grid"></div>
+        </div>
+
+        <!-- Pasta -->
+        <div class="menu-category" data-category="pasta">
+          <h2 class="menu-category-title">PASTA</h2>
+          <div class="menu-grid"></div>
+        </div>
+
+        <!-- Burgers -->
+        <div class="menu-category" data-category="burgers">
+          <h2 class="menu-category-title">BURGERS</h2>
+          <div class="menu-grid"></div>
+        </div>
+
+        <!-- Sides -->
+        <div class="menu-category" data-category="sides">
+          <h2 class="menu-category-title">SIDES</h2>
+          <div class="menu-grid"></div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category" data-category="desserts">
+          <h2 class="menu-category-title">DESSERTS</h2>
+          <div class="menu-grid"></div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-category" data-category="drinks">
+          <h2 class="menu-category-title">WINES & COCKTAILS</h2>
+          <div class="menu-grid"></div>
+        </div>
+
+        <!-- Smoke -->
+        <div class="menu-category" data-category="smoke">
+          <h2 class="menu-category-title">SMOKE</h2>
+          <div class="menu-grid"></div>
+        </div>
+
+        <!-- Happy Hours -->
+        <div class="menu-category" data-category="happy-hours">
+          <h2 class="menu-category-title">HAPPY HOURS</h2>
+          <div class="menu-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wine Section -->
+    <section class="section section-dark wine-section">
+      <div class="container">
+        <div class="wine-content">
+          <div class="wine-text">
+            <h2>WINE SELECTION</h2>
+            <p>
+              Our sommelier-curated wine list features over 200 carefully
+              selected bottles from renowned vineyards across France and beyond.
+              From crisp Champagnes to full-bodied Bordeaux, we offer the
+              perfect pairing for every dish.
+            </p>
+            <a href="contact.html" class="btn btn-outline">WINE CONSULTATION</a>
+          </div>
+          <div class="wine-image">
+            <img
+              src="https://images.pexels.com/photos/1640769/pexels-photo-1640769.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop"
+              alt="Wine Cellar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>SKYBAR</h3>
+          </div>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Reservations</a>
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 GenesisSkybar. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/animations.js"></script>
+  </body>
+</html>

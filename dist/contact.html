@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Genesis Skybar</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/skybar logo.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav nav-solid">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html"
+            ><img class="logo" src="assets/concave logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="menu.html">MENU</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="contact.html" class="active">CONTACT</a>
+        </div>
+        <div class="nav-social">
+          <a href="https://www.instagram.com/skybarphc/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://web.facebook.com/profile.php?id=100083162058939&_rdc=1&_rdr#"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-content">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <img
+          src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop"
+          alt="Contact"
+        />
+        <div class="page-hero-overlay"></div>
+      </div>
+      <div class="page-hero-content">
+        <h1>CONTACT</h1>
+        <p>Reserve your table for an unforgettable experience</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-light contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>RESERVATIONS</h2>
+            <div class="contact-item">
+              <h3>Address</h3>
+              <p>
+                3rd Floor, RXFW+J4R Genesis Center<br />
+                Opposite Market Square, Sky Bar<br />
+                Tombia St, New GRA, Port Harcourt 500272, Rivers
+              </p>
+            </div>
+            <div class="contact-item">
+              <h3>Phone</h3>
+              <p><a href="tel:+(234) 908-761-0221">+(234) 908-761-0221</a></p>
+            </div>
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p>
+                <a href="head.skybar@genesisgroupng.com"
+                  >head.skybar@genesisgroupng.com</a
+                >
+              </p>
+            </div>
+            <div class="contact-item">
+              <h3>Hours</h3>
+              <p>
+                Monday - Thursday: 4:00 PM - 1:00 AM<br />
+                Friday - Sunday: 2:00 PM - 1:00 AM<br />
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+              <h2>MAKE A RESERVATION</h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="date" id="date" name="date" required />
+                </div>
+                <div class="form-group">
+                  <select id="time" name="time" required>
+                    <option value="">Select Time</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="6:30 PM">6:30 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="7:30 PM">7:30 PM</option>
+                    <option value="8:00 PM">8:00 PM</option>
+                    <option value="8:30 PM">8:30 PM</option>
+                    <option value="9:00 PM">9:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <select id="guests" name="guests" required>
+                  <option value="">Number of Guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option>
+                  <option value="8">8 Guests</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Special Requests or Dietary Requirements"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">
+                SUBMIT RESERVATION
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="map-container">
+        <!-- <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.298263755944!2d-73.99492368524616!3d40.74844264352937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af3b7a3bd3%3A0x4b31f8ed2fb80fe1!2s123%20W%2027th%20St%2C%20New%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2s!4v1642345678901!5m2!1sen!2s" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe> -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d14540.863544115344!2d6.93055973818016!3d4.822030392752695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1069ce6528095515%3A0x23dfc8283f111de6!2s3rd%20Floor%2C%20RXFW%2BJ4R%20Genesis%20Center%2C%20Opposite%20Market%20Square%2C%20Sky%20Bar%2C%20Tombia%20St%2C%20New%20GRA%2C%20Port%20Harcourt%20500272%2C%20Rivers!3m2!1d4.8241564!2d6.9953249!5e0!3m2!1sen!2sng!4v1757169835294!5m2!1sen!2sng"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Private Events Section -->
+    <section class="section section-dark private-events">
+      <div class="container">
+        <div class="private-events-content">
+          <h2>PRIVATE EVENTS</h2>
+          <p>
+            Our private dining room accommodates up to 20 guests for intimate
+            celebrations, business dinners, and special occasions. Let our team
+            create a memorable experience tailored to your needs.
+          </p>
+          <div class="private-events-features">
+            <div class="feature">
+              <h3>Customized Menu</h3>
+              <p>
+                Work with our chef to create a personalized menu for your event
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Wine Pairing</h3>
+              <p>
+                Our sommelier will select the perfect wines to complement your
+                meal
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Dedicated Service</h3>
+              <p>
+                A dedicated team ensures flawless service throughout your event
+              </p>
+            </div>
+          </div>
+          <a href="mailto:events@skybar.com" class="btn btn-outline"
+            >INQUIRE ABOUT EVENTS</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>SKYBAR</h3>
+          </div>
+          <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Reservations</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/skybarphc/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://web.facebook.com/profile.php?id=100083162058939&_rdc=1&_rdr#"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 GenesisSkybar. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/animations.js"></script>
+  </body>
+</html>
