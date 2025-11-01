@@ -19,8 +19,20 @@ const contactForm = document.getElementById("contactForm");
 const filterToggleBtn = document.getElementById("filter-toggle");
 const filterButtonsContainer = document.querySelector(".filter-buttons");
 
+// Testimonials carousel elements
+const carouselTrack = document.querySelector(".carousel-track");
+const carouselSlides = document.querySelectorAll(".carousel-slide");
+const carouselPrev = document.querySelector(".carousel-prev");
+const carouselNext = document.querySelector(".carousel-next");
+const carouselDots = document.querySelectorAll(".carousel-dot");
+
 // Track scroll position for navigation effects
 let lastScrollY = window.scrollY;
+
+// Testimonials carousel state
+let currentSlide = 0;
+let autoScrollInterval;
+const autoScrollDelay = 6000; // 6 seconds
 
 // Handle navigation bar styling based on scroll position
 function handleScroll() {
@@ -380,7 +392,10 @@ function init() {
   // Close lightbox on background click
   if (lightbox) {
     lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox) {
+      if (
+        e.target === lightbox ||
+        e.target.classList.contains("lightbox-content")
+      ) {
         closeLightbox();
       }
     });
@@ -505,6 +520,9 @@ function init() {
   // Populate menu dynamically
   populateMenu();
 
+  // Initialize carousel
+  initCarousel();
+
   // Initialize Lucide icons
   lucide.createIcons();
 }
@@ -545,6 +563,87 @@ if ("serviceWorker" in navigator && window.location.protocol === "https:") {
       // Service worker registration failed, but this is not critical
     });
   });
+}
+
+// Testimonials carousel functions
+function updateCarousel() {
+  if (!carouselTrack) return;
+
+  const slideWidth = carouselSlides[0].offsetWidth;
+  carouselTrack.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+  // Update dots
+  carouselDots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === currentSlide);
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % carouselSlides.length;
+  updateCarousel();
+}
+
+function prevSlide() {
+  currentSlide =
+    (currentSlide - 1 + carouselSlides.length) % carouselSlides.length;
+  updateCarousel();
+}
+
+function goToSlide(slideIndex) {
+  currentSlide = slideIndex;
+  updateCarousel();
+}
+
+function startAutoScroll() {
+  autoScrollInterval = setInterval(nextSlide, autoScrollDelay);
+}
+
+function stopAutoScroll() {
+  clearInterval(autoScrollInterval);
+}
+
+function pauseAutoScroll() {
+  stopAutoScroll();
+  // Resume after 3 seconds of inactivity
+  setTimeout(startAutoScroll, 3000);
+}
+
+// Handle carousel interactions
+function handleCarouselInteraction() {
+  pauseAutoScroll();
+}
+
+// Initialize carousel
+function initCarousel() {
+  if (!carouselTrack || carouselSlides.length === 0) return;
+
+  // Set up event listeners
+  if (carouselPrev) {
+    carouselPrev.addEventListener("click", () => {
+      prevSlide();
+      handleCarouselInteraction();
+    });
+  }
+
+  if (carouselNext) {
+    carouselNext.addEventListener("click", () => {
+      nextSlide();
+      handleCarouselInteraction();
+    });
+  }
+
+  carouselDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      goToSlide(index);
+      handleCarouselInteraction();
+    });
+  });
+
+  // Start auto-scroll
+  startAutoScroll();
+
+  // Handle window resize
+  window.addEventListener("resize", updateCarousel);
 }
 
 // Utility functions for common operations and future extensibility
